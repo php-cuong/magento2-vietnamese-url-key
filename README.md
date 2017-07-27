@@ -20,3 +20,6 @@ Under your root folder, run the following command lines:
 - composer require php-cuong/magento2-vietnamese-url-key
 - php bin/magento setup:upgrade --keep-generated
 - php bin/magento cache:flush
+
+# See the video about this tutorial
+https://www.youtube.com/watch?v=SYH2Of9-6dY
