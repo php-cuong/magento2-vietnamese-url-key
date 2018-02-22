@@ -22,7 +22,7 @@ Under your root folder, run the following command lines:
 - php bin/magento cache:flush
 
 # Contact with the owner of this extension
-skype: cuongnq87
-facebook: https://www.facebook.com/giaphugroupcom/
-email: bestearnmoney87@gmail.com
-Do not hesitate to contact me if you need me to join your Magento project. My rate is $25/hour in Magento 1 and $30/hour in Magento 2.
+- skype: cuongnq87
+- facebook: https://www.facebook.com/giaphugroupcom/
+- email: bestearnmoney87@gmail.com
+- Do not hesitate to contact me if you need me to join your Magento project. My rate is $25/hour in Magento 1 and $30/hour in Magento 2.
