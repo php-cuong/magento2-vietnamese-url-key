@@ -9,7 +9,12 @@
 
 namespace PHPCuong\Framework\Filter;
 
-class TranslitUrl
+/**
+ * Url compatible translit filter
+ *
+ * Process string based on convertation table
+ */
+class TranslitUrl extends \Magento\Framework\Filter\Translit
 {
     /**
      * Convert a Vietnamese string to a Latin string
@@ -32,10 +37,13 @@ class TranslitUrl
      * @param string $string
      * @return string
      */
-    public function aroundFilter(\Magento\Framework\Filter\TranslitUrl $object, callable $proceed, $string)
+    public function filter($string)
     {
         $string = $this->convertTextToLatin($string);
-        $string = $proceed($string);
+        $string = preg_replace('#[^0-9a-z]+#i', '-', parent::filter($string));
+        $string = strtolower($string);
+        $string = trim($string, '-');
+
         return $string;
     }
 }
